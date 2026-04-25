@@ -2,8 +2,7 @@ export async function onRequest(context) {
   // List of image URLs
   const images = [
     "https://picsum.photos/640/360",
-    "https://placekitten.com/640/360",
-    "https://static.wikitide.net/windowswallpaperwiki/thumb/1/11/Img0_%28Windows_8.1%29.jpg/1280px-Img0_%28Windows_8.1%29.jpg"
+    "https://placekitten.com/640/360"
   ];
 
   // Pick a random image
@@ -12,9 +11,9 @@ export async function onRequest(context) {
 try {
     const response = await fetch(randomImage);
 
-    // If the fetch worked but returned an error status
+    // always use 200 
     if (!response.ok) {
-      return new Response("Failed to fetch background", { status: 500 });
+      return new Response("response.body", { status: 200 });
     }
 
     return new Response(response.body, {
