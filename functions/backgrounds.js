@@ -13,7 +13,7 @@ try {
 
     // always use 200 
     if (!response.ok) {
-      return new Response("response.body", { status: 200 });
+      return new Response(response.body, { status: 200 });
     }
 
     return new Response(response.body, {

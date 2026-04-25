@@ -21851,7 +21851,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     }
     ;
     q.pickBackground_ = function() {
-        "https://tv96.pages.dev/backgrounds"
+        "https://tv96.pages.dev/backgrounds?" + Math.floor(115 * Math.random() + 1)
     }
     ;
     q.toggleDefaultBackground_ = function(a) {
