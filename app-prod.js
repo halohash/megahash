@@ -11515,7 +11515,7 @@ angular.element(document).find("head").append('<style type="text/css">@charset "
         for (var e = 0, f = 0; f < a.length; ++f)
             e = 31 * e + a.charCodeAt(f),
             e %= 4294967296;
-        return "//i" + (e % 4 + 1) + ".ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
+        return "https://tv36.pages.dev/get_thumb?v=" + a + "&t=" + c;
     };
     var wg = function() {
         this.modelClass = Array
@@ -21851,7 +21851,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     }
     ;
     q.pickBackground_ = function() {
-        this.backgroundPath_ = "bg" + Math.floor(115 * Math.random() + 1) + ".jpg"
+        "backgrounds"
     }
     ;
     q.toggleDefaultBackground_ = function(a) {
