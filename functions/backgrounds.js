@@ -15,7 +15,7 @@ try {
 
     // always use 200 
     if (!response.ok) {
-      return new Response(await fetch("https://file.garden/aUYIWVAKvQxCBY-_/bgs/bg1.jpg");, { status: 200 });
+      return new Response(await fetch("https://file.garden/aUYIWVAKvQxCBY-_/bgs/bg1.jpg"), { status: 200 });
     }
 
     return new Response(response.body, {
