@@ -2,7 +2,9 @@ export async function onRequest(context) {
   // List of image URLs
   const images = [
     "https://picsum.photos/640/360",
-    "https://placekitten.com/640/360"
+    "https://placekitten.com/640/360",
+    "https://file.garden/aUYIWVAKvQxCBY-_/miscbgs/gplay-1920x1080.png",
+    "https://file.garden/aUYIWVAKvQxCBY-_/miscbgs/dog.jpeg"
   ];
 
   // Pick a random image
